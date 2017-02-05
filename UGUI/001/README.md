@@ -5,11 +5,17 @@ UGUI 可视化创建以及关联事件很方便, 动态创建可以利用创建�
 ## 1. 可视化创建及事件绑定 # #
 
 Step 1 : 通过 Hierarchy 面板创建 `UI > Button`.
+
 ![](http://wx4.sinaimg.cn/mw690/a53846c3gy1fcfo8xobhwj20dw07cglx.jpg)
+
 Step 2 : 创建一个脚本 TestClick.cs, 定义了一个 Click 的 public 方法.
+
 Step 3 : 选中 Hierarchy 中的 Button, `Add Component` 脚本 TestClick.cs
+
 Step 4 : 在 `Button(Script)` 关联 TestClick 脚本里的 Click 方法.
+
 ![](http://wx1.sinaimg.cn/mw690/a53846c3gy1fcfo8wu4uyj20lm0lw76q.jpg)
+
 Step 5 : Done.
 
 TestClick.cs
@@ -31,9 +37,13 @@ public class TestClick : MonoBehaviour {
 ## 2. 通过直接绑定脚本来绑定事件 # #
 
 Step 1 : 通过 Hierarchy 面板创建 `UI > Button`.
+
 Step 2 : 创建一个 ClickHandler.cs 脚本, 定义了一个私有方法 OnClick(), 并在 Start() 方法里为 Button 添加点击事件的监听,作为参数传入 OnClick 方法.
+
 Step 3 : 将 ClickHandler 绑定在 Button 对象上.
+
 ![](http://wx3.sinaimg.cn/mw690/a53846c3gy1fcfo8wxoijj20lo09kq3l.jpg)
+
 Step 4 : Done.
 
 ClickHandler.cs
@@ -64,9 +74,13 @@ public class ClickHandler : MonoBehaviour {
 UGUI 系统中 Button 默认只提供了 OnClick 的调用方法, 有时候我们还需要监听鼠标进入事件 (MouseIn) 和鼠标滑出事件 (MouseOut). 就需要借助 UI 系统中的 EventTrigger 脚本来实现.
 
 Step 1 : 通过 Hierarchy 面板创建 `UI > Button`.
+
 Step 2 : 创建一个 EventTriggerHandler.cs 脚本, 利用 UnityEngine.EventSystems.EventTrigger 添加监听事件.
+
 Step 3 : 绑定 EventTriggerHandler.cs 脚本到 Button 上.
+
 ![](http://wx1.sinaimg.cn/mw690/a53846c3gy1fcfo8wunp4j20lo0c4wfj.jpg)
+
 Step 4 : Done.
 
 
@@ -112,9 +126,13 @@ public class EventTriggerHandler : MonoBehaviour {
 ## 4. 通过 MonoBehaviour 实现事件类接口来实现事件的监听 # #
 
 Step 1 : 通过 Hierarchy 面板创建 `UI > Button`.
+
 Step 2 : 创建一个 EventHandler.cs 脚本.
+
 Step 3 : 将脚本绑定在 Button 对象上.
+
 ![](http://wx2.sinaimg.cn/mw690/a53846c3gy1fcfo8wb4dej20lo09a74w.jpg)
+
 Step 4 : Done.
 
 EventHandler.cs
@@ -240,6 +258,6 @@ Project 结构
 
 ![](http://wx2.sinaimg.cn/mw690/a53846c3gy1fcfo8w7btyj20dw09k755.jpg)
 
-代码 : → UGUI4Event.unitypackage
+代码 : ↑↑↑ UGUI4Event.unitypackage
 
 End.
