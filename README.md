@@ -10,7 +10,7 @@ Unity 3D 项目实践 -- 纸上得来终觉浅，绝知此事要躬行
 ### UGUI
 
 - 001.Unity UGUI 按钮绑定事件的 4 种方式
-- 002.UGUI 列表 ListView 的实现
+- 002.实现僵尸跑酷游戏的 UGUI 实践
 
 ### Unity Shader
 
