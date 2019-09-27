@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">新概念 4</string>
+    <string name="mainPageTitle">这是标题</string>
+    <string name="welcome_to_shanbay">Welcome to Shanbay.\n</string>
+    <string name="article_title">Unit 1 / Lesson 1 \nFinding fossil man 发现化石人</string>
+    <string name="NewConcept4">新概念英语 4</string>
+    <string name="action_search">搜索单词</string>
+    <string name="action_font">字体大小</string>
+    <string name="action_others">其它</string>
+    <string name="search_words">搜索单词</string>
+    <string name="font_size">字体大小</string>
+    <string name="other_settings">其它设置</string>
+    <string name="double_click_exit">再按一次退出程序</string>
+    <string name="article_sub_title">· Unit 1 / Lesson 1</string>
+    <string name="test_txt">我们从书籍中可读到5,000 年前近东发生的事情，那里的人最早学会了写字。但直到现在,世界上有些地方，人们还不会书写。 他们保存历史的唯一办法是将历史当作传说讲述，由讲述人一代接一代地将史实描述为传奇故事口传下来。人类学家过去不清楚如今生活在太平洋诸岛上的波利尼西亚人的祖先来自何方，当地人的传说却告诉人们：其中一部分是约在2,000年前从印度尼西亚迁来的。 但是，和我们相似的原始人生活的年代太久远了，因此，有关他们的传说既使有如今也失传了。</string>
+    <string name="pageTitle">Unit 1 / Lesson 1\n· Finding fossil man 发现化石人</string>
+    <string name="open_panel">打开_d</string>
+    <string name="jusTxt">（两端对齐的效果） </string>
+    <string name="justify_align">两边对齐</string>
+    <string name="choose_level_of_words">请选择你想高亮单词的级别：↓↓</string>
+    <string name="close_me">还原状态</string>
+    <string name="now_highlight_level">"现在高亮的单词级别为 level "</string>
+</resources>

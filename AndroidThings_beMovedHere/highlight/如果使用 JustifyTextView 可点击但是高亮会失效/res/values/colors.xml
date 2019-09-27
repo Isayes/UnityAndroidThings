@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F9D85</color>
+    <color name="colorPrimaryDark">#3cb371</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButton">#8f7bba</color>
+    <color name="colorShanbay">#1F9D85</color><!--扇贝主题青色-->
+    <color name="colorWhite">#ffffff</color><!--白色 -->
+    <color name="mediumSeaGreen">#3cb371</color><!--中海蓝 -->
+    <color name="black">#000000</color>
+    <color name="gray">#dee0e1</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimaryTransparent">#e31f9c84</color>
+    <color name="colorNormalTxt">#7C7C7C</color>
+</resources>

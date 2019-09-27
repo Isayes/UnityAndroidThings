@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 	<string-array name="complexity_labels">
+ 		<item>4x4 Very Very Low</item>
+        <item>8x8 Very Low</item>
+        <item>16x16 Low</item>
+		<item>24x24 Medium - Low</item>
+		<item>32x32 Medium</item>
+		<item>48x48 Medium - High</item>
+        <item>64x64 High</item>
+        <item>128x128 Very High</item>
+    </string-array>
+    <string-array name="complexity_values">
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+		<item>24</item>
+		<item>32</item>
+		<item>48</item>
+        <item>64</item>
+        <item>128</item>
+    </string-array>
+    
+    <string-array name="texture_size_labels">
+ 		<item>8x8</item>
+ 		<item>32x32</item>
+ 		<item>64x64</item>
+ 		<item>128x128</item>
+ 		<item>256x256</item>
+ 		<item>512x512</item>
+ 		<item>1024x1024</item>
+ 		<item>2048x2048</item>
+    </string-array>
+    <string-array name="texture_size_values">
+        <item>8</item>
+		<item>32</item>
+        <item>64</item>
+        <item>128</item>
+        <item>256</item>
+        <item>512</item>
+        <item>1024</item>
+        <item>2048</item>
+    </string-array>
+    
+    <string-array name="texture_filter_labels">
+ 		<item>Nearest Neighbor</item>
+ 		<item>Bilinear</item>
+ 		<item>Trilinear (mipmaps only)</item>
+    </string-array>
+    
+    <string-array name="texture_filter_values">
+ 		<item>nearest</item>
+ 		<item>bilinear</item>
+ 		<item>trilinear</item>
+    </string-array>
+</resources>

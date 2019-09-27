@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="doTest"
+        android:text="do" />
+
+    <com.nikoyuwono.toolbarpanel.ToolbarPanelLayout
+        android:id="@+id/sliding_down_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:panelId="@+id/panel"
+        app:pullableToolbarId="@+id/toolbar">
+
+        <ScrollView
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <io.github.isayes.highlight.JustifyTextView
+                android:id="@+id/id_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                android:textColorHighlight="@color/colorShanbay"
+                android:textSize="18sp" />
+
+        </ScrollView>
+
+        <!-- 此 Toolbar 不是用来做 toolbar 的，我用来占位做效果辅助 -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone">
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryTransparent"
+                android:orientation="vertical"
+                android:paddingBottom="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="请选择你想高亮单词的级别：↓↓"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_article_list_item"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="这里将放一个 SeekBar 之类的控件"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.nikoyuwono.toolbarpanel.ToolbarPanelLayout>
+
+</LinearLayout>

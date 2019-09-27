@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_feedback_type">
+        <item>页面适配问题</item>
+        <item>异常退出</item>
+        <item>功能缺陷</item>
+        <item>业务逻辑问题</item>
+        <item>建议</item>
+    </string-array>
+</resources>

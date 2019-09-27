@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_toolbar" type="id" />
+    <item name="id_pageTitle" type="id" />
+    <item name="id_btn" type="id" />
+    <item name="action_edit" type="id" />
+    <item name="action_share" type="id" />
+</resources>

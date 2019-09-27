@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/gray"
+    android:orientation="horizontal">
+
+    <!-- 测试 -->
+    <TextView
+        android:id="@+id/id_tab01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/tab1"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <!-- 结果 -->
+    <TextView
+        android:id="@+id/id_tab02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/tab2"
+        android:textColor="#fff"
+
+        android:textSize="20sp" />
+
+    <!-- 信息 -->
+    <TextView
+        android:id="@+id/id_tab03"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/tab3"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+
+    <!-- 配置 -->
+    <TextView
+        android:id="@+id/id_tab04"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/tab4"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</LinearLayout>

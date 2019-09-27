@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="io.github.isayes.shanbaydemo.activitys.ArticleActivity">
+
+    <include layout="@layout/widget_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <com.actinarium.aligned.TextView
+                android:id="@+id/id_tv_article"
+                style="@style/CustomTxtStyle"
+                android:layout_margin="6dp"
+                android:background="@drawable/bg_article_list_item"
+                android:gravity="fill_horizontal"
+                android:padding="6dp"
+                android:text="@string/test_txt"
+                android:textColorHighlight="@color/colorShanbay"
+                android:textIsSelectable="false"
+                android:textSize="18sp" />
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/id_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@color/colorPrimaryTransparent"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/id_txt_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/choose_level_of_words" />
+
+            <RatingBar
+                android:id="@+id/id_ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_txt_hint"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp" />
+
+            <TextView
+                android:id="@+id/id_txtButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_article_list_item"
+                android:gravity="center"
+                android:onClick="goToJustAct"
+                android:padding="6dp"
+                android:text="@string/justify_align"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/id_txtButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_article_list_item"
+                android:gravity="center"
+                android:onClick="closePanel"
+                android:padding="6dp"
+                android:text="@string/close_me" />
+
+            <Switch
+                android:id="@+id/id_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/id_txtButton"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

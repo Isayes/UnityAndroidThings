@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MyCenterActivity">
+
+    <include layout="@layout/mytoolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/id_item_recordOfGettingScores"
+            style="@style/CustomItemStyle"
+            android:background="@drawable/item_bg_top"
+            android:text="@string/recordOfGettingScores" />
+
+        <TextView
+            android:id="@+id/id_item_recordOfConsumingScores"
+            style="@style/CustomItemStyle"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/item_bg_bottom"
+            android:text="@string/recordOfConsumingScores" />
+
+        <TextView
+            android:id="@+id/id_item_listOfScoresRink"
+            style="@style/CustomItemStyle"
+            android:background="@drawable/item_bg_top"
+            android:text="@string/listOfScoresRink" />
+
+        <TextView
+            android:id="@+id/id_item_marketOfScores"
+            style="@style/CustomItemStyle"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/item_bg_bottom"
+            android:text="@string/marketOfScores" />
+
+        <TextView
+            android:id="@+id/id_item_share"
+            style="@style/CustomItemStyle"
+            android:background="@drawable/item_bg_top"
+            android:text="@string/share" />
+
+        <TextView
+            android:id="@+id/id_item_about"
+            style="@style/CustomItemStyle"
+            android:background="@drawable/item_bg_bottom"
+            android:text="@string/about" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/id_btn_logOut"
+                style="@style/CustomBtnStyle"
+                android:background="@drawable/logout_btn_bg"
+                android:text="@string/logOut" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

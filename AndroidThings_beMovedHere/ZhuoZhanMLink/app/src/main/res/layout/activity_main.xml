@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006F2D"
+    android:orientation="vertical"
+    tools:context="io.github.isayes.mlink.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/main_top_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_top_center"
+            android:contentDescription="@string/iv_main_bg_top" />
+
+        <ImageView
+            android:id="@+id/id_to_MyCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/my_center"
+            android:contentDescription="@string/iv_go_to_center" />
+
+        <ImageView
+            android:id="@+id/id_go_to_get_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/get_task"
+            android:contentDescription="@string/iv_get_task" />
+
+        <ImageView
+            android:id="@+id/id_go_to_exchange_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/exchange_scores"
+            android:contentDescription="@string/iv_exchange_scores" />
+
+        <TextView
+            style="@style/CustomTextMainPage"
+            android:layout_alignParentStart="true"
+            android:drawableBottom="@drawable/top_txt_a"
+            android:text="@string/valueOfTasks" />
+
+        <TextView
+            style="@style/CustomTextMainPage"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:drawableBottom="@drawable/top_txt_b"
+            android:text="@string/valueOfFeedback" />
+
+        <TextView
+            style="@style/CustomTextMainPage"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:drawableBottom="@drawable/top_txt_c"
+            android:text="@string/valueOfUsefulFeedback" />
+
+        <TextView
+            style="@style/CustomTextMainPage"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:drawableBottom="@drawable/top_txt_d"
+            android:text="@string/valueOfMyRank" />
+
+        <TextView
+            style="@style/CustomTextMainPage"
+            android:layout_below="@id/id_go_to_get_task"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/top_txt_e"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="@string/valueOfTotalScores" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.618"
+        android:background="@drawable/main_bottom_bg"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/CustomTxtStyle"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="我接受的任务" />
+
+        <ListView
+            android:id="@+id/id_main_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:transcriptMode="alwaysScroll">
+
+        </ListView>
+
+    </LinearLayout>
+</LinearLayout>

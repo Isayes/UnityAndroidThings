@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/id_btn_voiceBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonBack"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="true" />
+
+    <Button
+        android:id="@+id/bt_recognize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="录音" />
+
+    <Button
+        android:id="@+id/bt_speek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="识别" />
+
+    <Button
+        android:id="@+id/bt_speek_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="重复" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="语音控制开关"
+        android:textColor="@color/littlewhite" />
+
+    <ToggleButton
+        android:id="@+id/tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

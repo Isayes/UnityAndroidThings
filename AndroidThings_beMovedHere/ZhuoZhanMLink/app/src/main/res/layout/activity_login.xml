@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+    <include layout="@layout/mytoolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_reg_bg"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/login_logo"
+            android:src="@drawable/login_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/CustomEditIconStyle"
+                    android:contentDescription="@string/login_account_icon"
+                    android:src="@drawable/login_account_icon" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/id_input_account"
+                        style="@style/CustomEditStyle"
+                        android:hint="@string/prompt_phone"
+                        android:inputType="phone" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="#439812" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/CustomEditIconStyle"
+                    android:contentDescription="@string/login_pwd_icon"
+                    android:src="@drawable/login_pwd_icon" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp">
+
+                    <EditText
+                        android:id="@+id/id_input_pwd"
+                        style="@style/CustomEditStyle"
+                        android:hint="@string/prompt_password"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:padding="1dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/id_btn_login"
+            style="@style/CustomBtnStyle"
+            android:background="@drawable/login_btn_bg"
+            android:text="@string/login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_txt_reg"
+                style="@style/CustomTxtStyle"
+                android:gravity="start"
+                android:paddingBottom="10dp"
+                android:text="@string/reg_reminder" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/id_txt_forget_pwd"
+                style="@style/CustomTxtStyle"
+                android:gravity="end"
+                android:paddingBottom="10dp"
+                android:text="@string/pwd_reminder" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

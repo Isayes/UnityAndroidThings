@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.isayes.mlink.activity.FeedbackActivity">
+
+    <include layout="@layout/mytoolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/bug_feedback_type"
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/frame_bg"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/id_spinner_feedback_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_feedback_type">
+
+        </Spinner>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/bug_feedback_content"
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/frame_bg"
+        android:gravity="start"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/long_click_to_delete"
+        android:textColor="@color/red"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/add_pic"
+        android:src="@drawable/add_pic" />
+
+    <Button
+        style="@style/CustomBtnStyle"
+        android:layout_margin="16dp"
+        android:onClick="submitFeedback"
+        android:background="@drawable/submit_btn_bg"
+        android:text="@string/submit_btn" />
+</LinearLayout>

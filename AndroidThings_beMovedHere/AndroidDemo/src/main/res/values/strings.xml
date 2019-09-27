@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">HF练习</string>
+    <string name="title_bar_txt">HF练习</string>I
+    <string name="tab1">测试</string>
+    <string name="tab2">结果</string>
+    <string name="tab3">信息</string>
+    <string name="tab4">配置</string>
+    <string name="tab_pic">tab_pic</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_1"> 1 - 查看手机信息</string>
+    <string name="content_2"> 2 - 获取 IP/ISP</string>
+    <string name="content_3"> 2 - 查看拨盘效果</string>
+    <string name="content_4">3 - 使用百度地图</string>
+    <string name="content_5">4 - 测试语音识别技术</string>
+    <string name="tab_txt"><![CDATA[< This is 测试 page >]]></string>
+    <string name="tab1_txt">向左滑动</string>
+    <string name="tab2_txt">结果</string>
+    <string name="tab3_txt">信息</string>
+    <string name="tab4_txt">配置</string>
+    <string name="voiceDemo">操作语音识别</string>
+    <string name="mobileInfo">查看手机信息</string>
+    <string name="mobileIpIsp">外网 IP | ISP</string>
+    <string name="instruction">请点击按钮前往查看</string>
+    <string name="title_activity_new">NewActivity</string>
+
+    <!-- phone info -->
+    <string name="button01">点击刷新查看手机信息</string>
+    <string name="buttonBack">返回上一页面</string>
+    <string name="info">\n\n\nIMEI:\n\nIMSI:\n\n蜂窝网络强度 GSM \n\n当前网络类型:\n</string>
+    <string name="map_info">显示经纬度</string>
+    <string name="startlocation">开启定位</string>
+    <string name="stoplocation">停止定位</string>
+    <string name="error_code_desc">错误码说明</string>
+    <string name="qa_title">常见问题</string>
+    <string name="hight_accuracy_desc">高精度定位模式下，会同时使用GPS、Wifi和基站定位，返回的是当前条件下精度最好的定位结果</string>
+    <string name="saving_battery_desc">低功耗定位模式下，仅使用网络定位即Wifi和基站定位，返回的是当前条件下精度最好的网络定位结果</string>
+    <string name="device_sensor_desc">仅用设备定位模式下，只使用用户的GPS进行定位。这个模式下，由于GPS芯片锁定需要时间，首次定位速度会需要一定的时间</string>
+    <string name="error_code_detail"> 61 ： GPS定位结果\n
+		62 ： 扫描整合定位依据失败。此时定位结果无效。\n
+		63 ： 网络异常，没有成功向服务器发起请求。此时定位结果无效。\n
+		65 ： 定位缓存的结果。\n
+		66 ： 离线定位结果。通过requestOfflineLocaiton调用时对应的返回结果\n
+		67 ： 离线定位失败。通过requestOfflineLocaiton调用时对应的返回结果\n
+		68 ： 网络连接失败时，查找本地离线定位时对应的返回结果\n
+		161： 表示网络定位结果\n
+		162~167： 服务端定位失败\n
+		502：key参数错误\n
+		505：key不存在或者非法\n
+		601：key服务被开发者自己禁用\n
+		602：key mcode不匹配\n
+		501～700：key验证失败\n</string>
+    <string name="qa_callback">问题反馈方法</string>
+    <string name="qa_callback_mail">mapapi@baidu.com</string>
+    <string name="button03">点击返回</string>
+    <string name="buttonFresh">点击刷新查看IP/ISP</string>
+</resources>

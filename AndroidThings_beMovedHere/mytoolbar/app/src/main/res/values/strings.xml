@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyToolbar</string>
+    <string name="mainPageTitle">这是标题</string>
+    <string name="secondPageTitle">用户反馈</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_share">分享</string>
+    <string name="action_settings">设置</string>
+</resources>

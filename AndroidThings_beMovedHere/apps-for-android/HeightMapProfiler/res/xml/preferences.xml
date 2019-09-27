@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+   		android:title="Profile Test">
+	    <Preference
+	        android:key="runtest"
+			android:title="Run Test" />
+	</PreferenceCategory>
+	<PreferenceCategory
+        android:title="Game">
+		<CheckBoxPreference
+		      android:key="runsim"
+		      android:title="Run Simulation" 
+		      android:summary="Runs a simple movement and collision simulation during the test."
+		      android:defaultValue="true"
+		      android:persistent="true"/>
+	</PreferenceCategory>
+	<PreferenceCategory
+       	android:title="Rendering Settings">
+	    <CheckBoxPreference
+		     android:key="bigworld"
+		     android:title="Big World"
+		     android:summary="Draws multiple land tiles." 
+		     android:defaultValue="true" 
+		     android:persistent="true"/>
+		<CheckBoxPreference
+	          android:key="skybox"
+	          android:title="Skybox"
+	          android:summary="Draws a skybox behind the landscape." 
+	          android:defaultValue="true" 
+	          android:persistent="true"/>
+      <PreferenceScreen
+       	android:key="mesh_prefs"
+       	android:title="Mesh Settings">
+       	<ListPreference 
+          	android:key="complexity"
+          	android:title="Mesh Complexity" 
+          	android:summary="Controls the number of subdivisions in each land tile."
+          	android:entries="@array/complexity_labels"
+          	android:entryValues="@array/complexity_values" 
+          	android:persistent="true"/>
+		<CheckBoxPreference
+           android:key="lod"
+           android:title="Level of Detail - Mesh" 
+           android:summary="In Big World mode, causes far-off objects to display as simpler meshes."
+           android:defaultValue="true" 
+           android:persistent="true"/>
+        <CheckBoxPreference
+           android:key="vbo"
+           android:title="Vertex Buffer Objects" 
+           android:summary="Stores meshes in VRAM as VBOs."
+           android:defaultValue="true" 
+           android:persistent="true"/>
+       <CheckBoxPreference
+           android:key="colors"
+           android:title="Vertex Colors" 
+           android:summary="Draws static shadows using vertex colors."
+           android:defaultValue="true" 
+           android:persistent="true"/>
+        <CheckBoxPreference
+           android:key="fixed"
+           android:title="Fixed Point" 
+           android:summary="Uses fixed point for the mesh."
+           android:defaultValue="false" 
+           android:persistent="true"/>
+ 	</PreferenceScreen>
+    <PreferenceScreen
+  		android:key="texture_prefs"
+  		android:title="Texture Settings">
+	  	<CheckBoxPreference
+		      android:key="texture"
+		      android:title="Texture" 
+		      android:summary="Draws landscape with a texture." 
+		      android:defaultValue="true" 
+		      android:persistent="true"/>
+		<CheckBoxPreference
+		     android:key="lodTexture"
+		     android:title="Level of Detail - Texture" 
+		     android:summary="In Big World mode, causes far-off objects to use simpler texture map"
+		     android:defaultValue="true" 
+		     android:persistent="true"/>
+	   <CheckBoxPreference
+		     android:key="textureMips"
+		     android:title="Use Hardware Mipmaps" 
+		     android:summary="Implements level-of-detail textures with mipmaps."
+		     android:defaultValue="true" 
+		     android:persistent="true"/>
+  		<CheckBoxPreference
+		     android:key="lodTextureColored"
+		     android:title="Use Colored Textures" 
+		     android:summary="Sets each LOD texture to a different color to help visualization"  
+		     android:defaultValue="false" 
+		     android:persistent="true"/>
+  		<ListPreference 
+	     	android:key="maxTextureSize"
+	     	android:title="Max Texture Size" 
+	     	android:summary="Change the maximum texture size."
+	     	android:entries="@array/texture_size_labels"
+	     	android:entryValues="@array/texture_size_values" 
+    		android:persistent="true"/>
+    	<ListPreference 
+	     	android:key="textureFiltering"
+	     	android:title="Texture Filtering" 
+	     	android:summary="Change the type of texture filtering."
+	     	android:entries="@array/texture_filter_labels"
+	     	android:entryValues="@array/texture_filter_values" 
+    		android:persistent="true"/>
+		</PreferenceScreen>
+        
+       <CheckBoxPreference
+          android:key="ndk"
+          android:title="NDK Rendering" 
+          android:summary="Runs the renderer as native code via the NDK."
+          android:defaultValue="false" 
+          android:persistent="true"/>
+	</PreferenceCategory>
+</PreferenceScreen>

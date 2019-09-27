@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.Tab01Fragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/id_txt_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/content_1"
+        android:textSize="25sp" />
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/id_txt_ipisp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/content_2"
+        android:textSize="25sp" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/id_txt_bopan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/content_3"
+        android:textSize="25sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/id_txt_bdmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/content_4"
+        android:textSize="25sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/id_txt_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/content_5"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/tab2_txt"
+        android:textSize="30sp" />
+
+</LinearLayout>

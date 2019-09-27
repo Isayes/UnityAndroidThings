@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00963D"
+    android:orientation="vertical"
+    tools:context="io.github.isayes.mlink.activity.ScoreRankActivity">
+
+    <include layout="@layout/mytoolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.618">
+
+            <TextView
+                style="@style/CustomTextMainPage"
+                android:layout_alignParentStart="true"
+                android:padding="16dp"
+                android:text="排名1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/score_pic" />
+
+            <TextView
+                style="@style/CustomTextMainPage"
+                android:layout_alignParentEnd="true"
+                android:padding="16dp"
+                android:text="排名2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

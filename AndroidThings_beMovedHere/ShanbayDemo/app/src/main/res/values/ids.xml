@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_page_toolbar" type="id" />
+    <item name="id_pageTitle" type="id" />
+    <item name="id_btn" type="id" />
+    <item name="action_search" type="id" />
+    <item name="id_item_testTxt" type="id" />
+    <item name="id_recyclerView" type="id" />
+    <item name="id_item_testTxt2" type="id" />
+    <item name="id_item_title" type="id" />
+    <item name="id_item_subTitle" type="id" />
+    <item name="id_just_txt" type="id" />
+</resources>

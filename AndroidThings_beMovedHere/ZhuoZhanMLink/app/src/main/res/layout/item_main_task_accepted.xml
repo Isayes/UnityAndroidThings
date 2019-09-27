@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_item_bg"
+    android:orientation="horizontal"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/id_app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/app_logo_contentDescription"
+        android:src="@drawable/logo_diandike" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_task_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/itemTaskAppName"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_task_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/itemTaskCompanyName"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/id_task_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/itemTaskTodo"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/id_task_app_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textSize="13sp"
+            android:text="@string/itemTaskAppDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/id_app_open"
+            style="@style/CustomItemBtnStyle"
+            android:text="@string/itemTaskBtnAppOpen" />
+
+        <Button
+            android:id="@+id/id_app_feedback"
+            style="@style/CustomItemBtnStyle"
+            android:background="@drawable/item_btn_bg_green"
+            android:text="@string/itemTaskBtnAppFeedback"
+            android:textColor="@color/green" />
+    </LinearLayout>
+
+</LinearLayout>
